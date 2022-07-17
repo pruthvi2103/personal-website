@@ -1,0 +1,26 @@
+---
+layout: project
+---
+
+<script context="module" lang="ts">
+    import projectsData from '../../data/projects.json'
+    import projectMap from '../../data/project-index-map.json'
+    import {getRepositoryDetails,getRepositoryLanguages} from '../../services/github/github'
+	export const prerender = true;
+    export async function load(ctx){
+        let projectId='covued'
+        let projectData=projectsData[projectMap[projectId]]
+        let projectRepoData=await Promise.all(projectData.gitHubLinks.map(async(gitHubLink,idx)=>{
+            
+        let projectRepoData=await getRepositoryDetails(projectData.gitHubLinks[idx]); 
+        
+        let projectLanguages=await getRepositoryLanguages(projectData.gitHubLinks[idx])
+        return {...projectRepoData,languages:Object.keys(projectLanguages)}
+        }))
+        return {props:{projectData,projectGithubRepoData:projectRepoData}}
+    }
+</script>
+<script lang="ts">
+export let projectData
+export let projectGithubRepoData
+</script>

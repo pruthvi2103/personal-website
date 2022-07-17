@@ -1,0 +1,34 @@
+[
+	{
+		"id": "covued",
+		"title": "Covued",
+		"description": "A simple web app that displays the state-wise number of cases of COVID-19 in India",
+		"tagLine": "My first ever dynamic web app",
+		"gitHubLinks": ["https://github.com/pruthvi2103/covued"],
+		"liveLink": "https://covued.herokuapp.com/"
+	},
+	{
+		"id": "tedx-2019",
+		"title": "TEDx JNEC 2019 Website",
+		"description": "Website for TEDx JNEC 2019 event, my first independent live-project",
+		"tagLine": "My very first independent project",
+		"gitHubLinks": ["https://github.com/TEDxJNEC/2k19/tree/gh-pages"],
+		"liveLink": "https://2k19tedxjnec.netlify.app/"
+	},
+	{
+		"id": "tedx-2020",
+		"title": "TEDx JNEC 2020 Web App",
+		"description": "Web App for TEDx JNEC 2020 handled bookings,streaming and info",
+		"gitHubLinks": ["https://github.com/TEDxJNEC/tedx-2021"],
+		"liveLink": "https://tedxjnec.netlify.app/",
+		"tagLine": "Managing a proper project putting learnings into practice",
+		"coverUrl": "/projects/tedx-2019/cover.png"
+	},
+	{
+		"id": "janus",
+		"title": "Janus",
+		"tagLine": "The start of my golang journey",
+		"description": "A simple 1 stop link-shortner, written in golang, uses mongodb as the database",
+		"gitHubLinks": ["https://github.com/pruthvi2103/Janus"]
+	}
+]
