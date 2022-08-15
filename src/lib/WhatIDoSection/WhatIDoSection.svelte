@@ -15,7 +15,7 @@ const {internship,professional,unprofessional} = calculateExperience()
 <p class={whatIDoParaStyles}>
     I am a Full Stack Developer with 
     <Highlight variant={highlightVariants.PURPLE}>
-        {professional[0]? `${professional[0]} ${professional[0] > 1 ? 'years ,':'year ,'}` :""} {professional[1]} months 
+        {professional[0]? `${professional[0]} ${professional[0] > 1 ? 'years':'year'}` :""} {professional[1] > 0 ? `, month${professional[1] > 1 ? `s` :``}` : ''}  
     </Highlight> 
     of experience, 
     I mostly work on <Highlight variant={highlightVariants.CYAN}>React</Highlight> (Nextjs and TS) and <Highlight variant={highlightVariants.GREEN}>Node</Highlight>. 
